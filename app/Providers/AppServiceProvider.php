@@ -52,6 +52,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         \View::composer(['products.index', 'products.show'], \App\Http\ViewComposers\CategoryTreeComposer::class);
-        
+
     }
 }
